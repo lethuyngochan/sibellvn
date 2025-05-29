@@ -1,0 +1,312 @@
+@font-face {
+    font-family: UTMAvoItalic;
+    src: url(../fonts/UTMAvoItalic.ttf);
+}
+@font-face {
+    font-family: UTMAvoBoldItalic;
+    src: url(../fonts/UTM_AvoBold_Italic.ttf);
+}
+.si-bell-la-gi {
+  background-color: #fbf2f5;
+  text-align: center;
+  padding: 45px 0 0;
+  line-height: 2;
+}
+.txt4 {
+  color: #fe9eb9;
+  font-family: UTMAvo_Bold;
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+.si-bell-la-gi-text {
+  padding: 45px 0 0;
+}
+.so-sanh-sibell-bvs {
+	text-align: center;
+	padding: 60px 0;
+}
+.cong-ty-siline {
+	background: #fbf2f5 url('../img/cty-siline-bg.png') no-repeat;
+	background-position: center;
+	text-align: center;
+	padding: 60px 0;
+}
+.gallery-img {
+	width: 100%;
+	height: 300px;
+	border-radius: 20px;
+}
+.tz-gallery {
+    padding: 40px;
+}
+.tz-gallery .thumbnail {
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+    transition: 0.15s ease-in-out;
+}
+.tz-gallery .thumbnail:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+.uu-diem-sibell {
+	text-align: center;
+	padding: 60px 0;
+}
+.ve-chung-toi {
+	background-color: #fbf2f5;
+  	text-align: center;
+  	padding: 60px 0 0;
+}
+.ve-chung-toi .col-sm-6 {
+	text-align: justify;
+}
+.txt5 {
+	font-family: UTMAvo_Bold;
+	font-size: 16px;
+}
+.caption {
+	font-family: UTMAvoItalic;
+	text-align: center;
+}
+.thumbnail a:hover {
+	text-decoration: none;
+}
+.y-kien {
+	text-align: center;
+  	padding: 60px 0 0;
+}
+.hdsd {
+  background-color: #fbf2f5;
+    text-align: center;
+    padding: 60px 0;
+    background: #fbf2f5 url('../img/bg-coc-tiet-trung.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#testimonialCarousel {
+  margin: 30px 0 0;
+}
+.hdsd-img {
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+}
+.hdsd-img img {
+  padding: 85px 0 0;
+}
+.hdsd iframe {
+  border-radius: 20px;
+}
+.row-eq-height {
+  display: flex; 
+}
+.hdsd-illustration {
+  margin: 30px 0 0;
+}
+.coc-tiet-trung-km {
+  border: 2px dashed #fe9eb9;
+  padding: 30px;
+  border-radius: 20px;
+  float: left;
+}
+.coc-tiet-trung-km img {
+  float: left;
+}
+.coc-tiet-trung-km-content {
+  float: left;
+  text-align: left;
+  padding: 0 30px;
+}
+.txt6 {
+  font-family: UTMAvo_Bold;
+  font-size: 24px;
+  margin: 0;
+}
+.coc-tiet-trung-km .txt4 {
+  margin: 0 0 5px;
+}
+.coc-tiet-trung-km .btn {
+  margin: 0 auto;
+}
+.thac-mac {
+  background: url('../img/thac-mac-sibell-bg.png') no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 60px 0;
+}
+.thac-mac iframe {
+  border-radius: 20px;
+  margin: 10px 0 0;
+}
+.thong-tin {
+  background-color: #fbf2f5;
+    padding: 60px 0;
+}
+.chu-y {
+  background-color: white;
+  border-radius: 20px;
+  float: left;
+  padding: 60px 30px;
+}
+.chu-y ul {
+  list-style: none;
+  padding: 0;
+}
+.chu-y ul img {
+  margin: 0 5px 0 0;
+}
+.chu-y ul li {
+  margin: 15px 0;
+}
+.cach-thuc-mua {
+  text-align: center;
+  padding: 60px 0;
+}
+.txt7 {
+  color: #fe9eb9;
+  font-family: UTMAvo_Bold;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.dk-nhan-coc {
+    background-color: #fbf2f5;
+    border-radius: 20px;
+    padding: 45px 45px 20px 130px;
+    position: relative;
+    text-align: left;
+    margin: 30px 0 0;
+}
+.dk-img {
+    position: absolute;
+    left: -40px;
+}
+.cach-mua1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tu-van-size {
+    border: 2px dashed #fe9eb9;
+    border-radius: 20px;
+    padding: 45px 45px 0 45px;
+    position: relative;
+    margin: 30px 0 0;
+}
+.cach-mua2 {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+.txt8 {
+  color: #ed1c24;
+  font-family: UTMAvo_Bold;
+  font-size: 25px;
+  margin: 0;
+}
+.txt9 {
+  color: #fe9eb9;
+  font-family: UTMAvo_Bold;
+  font-size: 25px;
+  margin: 0;
+}
+.thue-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.ban-co-biet {
+  background-color: #fbf2f5;
+    padding: 60px 0;
+    text-align: center;
+}
+.moi-truong {
+  border-radius: 100px;
+  width:128px;
+  height: 128px;
+  background: url('../img/coc-si-bell_03.png') no-repeat;
+  background-position: center;
+  text-align: center;
+  float: left;
+  margin: 0 15px 0 0;
+}
+.moi-truong-div {
+    text-align: left;
+    font-family: UTMAvoItalic;
+    position: absolute;
+    top: 70px;
+    width: 60%;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px dashed #fe9eb9;
+}
+.ban-co-biet-div {
+  position: relative;
+}
+.txt10 {
+  color: #fe9eb9;
+  font-size: 16px;
+  font-family: UTMAvoBoldItalic;
+}
+.txt11 {
+  color: #fe9eb9;
+  font-size: 25px;
+  font-family: UTMAvoBoldItalic;
+}
+.txt12 {
+  font-size: 16px;
+  font-family: UTMAvoBoldItalic;
+}
+.txt13 {
+  font-size: 25px;
+  font-family: UTMAvoBoldItalic;
+}
+.sibell-coc {
+  background-color: white;
+    float: left;
+    border-radius: 20px;
+    padding: 80px 30px 0;
+    width: 100%;
+    height: 100%;
+}
+.sibell-coc img {
+  width: 100%;
+  margin: 0 0 15px;
+}
+.sibell-coc a {
+    margin: 15px auto 0;
+    display: block;
+    max-width: 150px;
+}
+.dai-li {
+  background-color: #fe9eb9;
+    border-radius: 20px;
+    padding: 45px 45px 0;
+    color: white;
+    position: relative;
+}
+.dai-li p {
+    font-family: UTMAvo_Bold;
+    font-size: 30px;
+}
+.dai-li button {
+    position: absolute;
+    bottom: 15px;
+    left: 33%;
+}
+.dai-li img {
+  width: 100%;
+}
+.sibell-dai-li {
+  margin: 45px 0 0;
+}
+.footer {
+    background-color: #fe9eb9;
+    color: white;
+    text-align: center;
+    padding: 25px 0 15px;
+}
+.coc-tiet-trung-km-div {
+    width: 560px;
+    margin: 30px auto;
+    display: block;
+}
