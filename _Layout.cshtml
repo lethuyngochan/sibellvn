@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <style>
+        @@font-face {
+            font-family: UTMAvo;
+            src: url(/fonts/utm-avo.woff);
+        }
+
+        @@font-face {
+            font-family: UTMAvo_Bold;
+            src: url(/fonts/utm-avobold.woff);
+        }
+
+        body {
+            font-family: UTMAvo;
+        }
+
+        .banner {
+            background: url(/img/coc-nguyet-san-banner.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            padding: 100px 30px;
+        }
+
+        .txt1 {
+            text-transform: uppercase;
+            color: #fda323;
+            font-size: 28px;
+        }
+
+            .txt1 span {
+                font-family: UTMAvo_Bold;
+            }
+
+        .banner .container {
+            width: 60%;
+            float: left;
+            text-align: center;
+        }
+
+        .txt2 {
+            font-family: UTMAvo_Bold;
+            font-size: 22px;
+            border-top: 5px solid #ff9cd0;
+            border-left: 5px solid #ff9cd0;
+            border-right: 5px solid #ff9cd0;
+            padding: 15px;
+            margin: 30px auto 0;
+            max-width: 450px;
+        }
+
+        .txt3 {
+            font-size: 35px;
+            color: #d87ef0;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+            .txt3 span {
+                font-family: UTMAvo_Bold;
+            }
+
+        .txt4 {
+            font-size: 25px;
+            text-decoration: line-through;
+            border-left: 5px solid #ff9cd0;
+            border-right: 5px solid #ff9cd0;
+            max-width: 450px;
+            margin: auto;
+            padding: 0 0 15px;
+        }
+
+        .price {
+            background-color: #ff9cd0;
+            color: white;
+            max-width: 450px;
+            margin: 0 auto 45px;
+            padding: 15px;
+        }
+
+            .price p {
+                margin: 0;
+            }
+
+        .txt5 {
+            font-size: 50px;
+            font-family: UTMAvo_Bold;
+            line-height: 1;
+        }
+
+        button, .signup-btn {
+            background-color: #fd3434;
+            color: white;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
+            font-family: UTMAvo_Bold;
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+            button:hover, .signup-btn:hover {
+                background-color: #d51414;
+                cursor: pointer;
+            }
+
+            button:focus, .signup-btn:focus {
+                outline: none;
+            }
+
+        .scroll {
+            animation: MoveUpDown 1s linear infinite;
+            position: absolute;
+            left: 45%;
+            bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+            .scroll img {
+                max-width: 20px;
+            }
+
+        @@keyframes MoveUpDown {
+            0% {
+                bottom: 0;
+            }
+
+            50% {
+                bottom: 20px;
+            }
+
+            100% {
+                bottom: 0;
+            }
+        }
+
+        @@media (max-width:992px) {
+            .banner {
+                padding: 60px 30px;
+            }
+        }
+
+        @@media (max-width:767px) {
+            .txt1 {
+                font-size: 18px;
+            }
+
+            .txt2 {
+                font-size: 15px;
+            }
+
+            .txt3 {
+                font-size: 30px;
+            }
+
+            .txt4 {
+                font-size: 15px;
+            }
+
+            .txt5 {
+                font-size: 35px;
+            }
+
+            button {
+                font-size: 15px;
+            }
+
+            .banner {
+                padding: 60px 0;
+            }
+        }
+    </style>
+    @*@Styles.Render("~/Content/css")*@
+</head>
+<body>
+    @RenderBody()
+
+    <!--loading-->
+    <div class="cssload-container" id="progress">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <!--end loading-->
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    @*<script type="text/javascript" src="/js/jquery-2.0.3.js"></script>*@
+    <script type="text/javascript" src="/js/jquery.countdownTimer.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.countdownTimer.css" />
+    <link href="~/Content/Plugin/sweetalert/sweetalert.css" rel="stylesheet" />
+    <script src="~/Content/Plugin/sweetalert/sweetalert.min.js"></script>
+    <script>
+        function ShowModal(ProductID) {
+            $('#myModal').modal('show');
+            $('#ms_timer').countdowntimer({
+                minutes: 20,
+                seconds: 00,
+                size: "lg"
+            });
+            LoadSource();
+        }
+        function loading() {
+            $('.cssload-container').addClass('active');
+        }
+        function endloading() {
+            $('.cssload-container').removeClass('active');
+        }
+        function LoadSource(element) {
+            $('#Source').val(document.referrer);
+        }
+        var Register = {
+            Success: function (data) {
+                if (data.Success) {
+                    swal(
+                        {
+                            title: data.Title,
+                            text: data.Message,
+                            type: "success",
+                            confirmButtonText: "Đóng"
+                        },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                $('#myModal').modal("hide");
+                            }
+                        });
+                }
+                else {
+                    swal({ title: data.Title, text: data.Message, type: "error", confirmButtonText: "Đóng" });
+                }
+            },
+            Fail: function () {
+                swal({ title: "Thông tin chưa được cập nhật", text: "Lỗi hệ thống, vui lòng thử lại hoặc thông báo cho chúng tôi biết!", type: "error", confirmButtonText: "Đóng" });
+            }
+        }
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
